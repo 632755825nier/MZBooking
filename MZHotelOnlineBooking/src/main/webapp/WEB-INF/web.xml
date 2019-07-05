@@ -1,0 +1,325 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <filter>
+  	<filter-name>EcodeFliter</filter-name>
+  	<display-name>EcodeFliter</display-name>
+  	<description></description>
+  	<filter-class>com.nier.Booking.servlet.EcodeFliter</filter-class>
+  </filter>
+  
+  <filter>
+  	<filter-name>UserLoginFilter</filter-name>
+  	<display-name>UserLoginFilter</display-name>
+  	<description></description>
+  	<filter-class>com.nier.Booking.servlet.Filters.UserLoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>EcodeFliter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+  	<filter-name>UserLoginFilter</filter-name>
+  	<url-pattern>/view/PersonalCenter.jsp</url-pattern>
+  </filter-mapping>
+  
+  <filter-mapping>
+  	<filter-name>UserLoginFilter</filter-name>
+  	<url-pattern>/view/personInfor.jsp</url-pattern>
+  </filter-mapping>
+  
+  <filter-mapping>
+  	<filter-name>UserLoginFilter</filter-name>
+  	<url-pattern>/view/personInfor2.jsp</url-pattern>
+  </filter-mapping>
+  
+  <filter-mapping>
+  	<filter-name>UserLoginFilter</filter-name>
+  	<url-pattern>/view/OrderPay.jsp</url-pattern>
+  </filter-mapping>
+
+
+
+  <servlet>
+  	<servlet-name>TextServlet</servlet-name>
+  	<display-name>TextServlet</display-name> 
+  	<description></description>
+  	<servlet-class>com.nier.Booking.servlet.TextServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>OrderPayServlet</servlet-name>
+  	<display-name>OrderPayServlet</display-name> 
+  	<description></description>
+  	<servlet-class>com.nier.Booking.servlet.OrderPayServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>PayServlet</servlet-name>
+  	<display-name>PayServlet</display-name> 
+  	<description></description>
+  	<servlet-class>com.nier.Booking.servlet.PayServlet</servlet-class>
+  </servlet>
+  
+  
+    <servlet>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<display-name>RegisterServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.nier.Booking.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>ShowMapServlet</servlet-name>
+  	<display-name>ShowMapServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.nier.Booking.servlet.ShowMapServlet</servlet-class> 
+  </servlet>
+  
+    <servlet>
+  	<servlet-name>GetImage</servlet-name>
+  	<display-name>GetImage</display-name>
+  	<description></description>
+  	<servlet-class>com.nier.Booking.servlet.GetImage</servlet-class> 
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<display-name>LoginServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.nier.Booking.servlet.LoginServlet</servlet-class>
+  </servlet>
+  
+    <servlet>
+  	<servlet-name>LookingroomServlet</servlet-name>
+  	<display-name>LookingroomServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.nier.Booking.servlet.LookingroomServlet</servlet-class>
+  </servlet>
+  
+      <servlet>
+  	<servlet-name>LookingroomInitServlet</servlet-name>
+  	<display-name>LookingroomInitServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.nier.Booking.servlet.LookingroomInitServlet</servlet-class>
+  </servlet>
+      <servlet>
+      	<servlet-name>PersonInfor2Servlet</servlet-name>
+      	<display-name>PersonInfor2Servlet</display-name>
+      	<description></description>
+      	<servlet-class>com.nier.Booking.servlet.PersonInfor2Servlet</servlet-class>
+      </servlet>
+      <servlet>
+      	<servlet-name>PersonInforServlet</servlet-name>
+      	<display-name>PersonInforServlet</display-name>
+      	<description></description>
+      	<servlet-class>com.nier.Booking.servlet.PersonInforServlet</servlet-class>
+      </servlet>
+      <servlet>
+      	<servlet-name>UserExitServlet</servlet-name>
+      	<display-name>UserExitServlet</display-name>
+      	<description></description>
+      	<servlet-class>com.nier.Booking.servlet.UserExitServlet</servlet-class>
+      </servlet>
+        <servlet>
+      	<servlet-name>CommentPageServlet</servlet-name>
+      	<display-name>CommentPageServlet</display-name>
+      	<description></description>
+      	<servlet-class>com.nier.Booking.servlet.CommentPageServlet</servlet-class>
+      </servlet>
+  	<servlet>
+  	<servlet-name>SearchResultServlet</servlet-name>
+  	<display-name>SearchResultServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.nier.Booking.servlet.SearchResultServlet</servlet-class>
+  </servlet>
+  <servlet>
+      	<servlet-name>SubmitImgServlet</servlet-name>
+      	<display-name>SubmitImgServlet</display-name>
+      	<description></description>
+      	<servlet-class>com.nier.Booking.servlet.SubmitImgServlet</servlet-class>
+      </servlet>
+      <servlet>
+      	<servlet-name>ChangeInfoServlet</servlet-name>
+      	<display-name>ChangeInfoServlet</display-name>
+      	<description></description>
+      	<servlet-class>com.nier.Booking.servlet.ChangeInfoServlet</servlet-class>
+      </servlet>
+          <servlet>
+      	<servlet-name>TucaoServlet</servlet-name>
+      	<display-name>TucaoServlet</display-name>
+      	<description></description>
+      	<servlet-class>com.nier.Booking.servlet.TucaoServlet</servlet-class>
+      </servlet>
+  	 <servlet>
+      	<servlet-name>AutoCompleteServlet</servlet-name>
+      	<display-name>AutoCompleteServlet</display-name>
+      	<description></description>
+      	<servlet-class>com.nier.Booking.servlet.AutoCompleteServlet</servlet-class>
+      </servlet>
+  	 <servlet>
+  	 	<servlet-name>RegisterVerifyServlet</servlet-name>
+  	 	<display-name>RegisterVerifyServlet</display-name>
+  	 	<description></description>
+  	 	<servlet-class>com.nier.Booking.servlet.RegisterVerifyServlet</servlet-class>
+  	 </servlet>
+  	 <servlet>
+  	 	<servlet-name>VerifyServlet</servlet-name>
+  	 	<display-name>VerifyServlet</display-name>
+  	 	<description></description>
+  	 	<servlet-class>com.nier.Booking.servlet.VerifyServlet</servlet-class>
+  	 </servlet>
+  	 <servlet>
+  	 	<servlet-name>ShowOrderServlet</servlet-name>
+  	 	<display-name>ShowOrderServlet</display-name>
+  	 	<description></description>
+  	 	<servlet-class>com.nier.Booking.servlet.ShowOrderServlet</servlet-class>
+  	 </servlet>
+  	 <servlet>
+  	 	<servlet-name>SendSms</servlet-name>
+  	 	<display-name>SendSms</display-name>
+  	 	<description></description>
+  	 	<servlet-class>com.nier.Booking.servlet.SendSms</servlet-class>
+  	 </servlet>
+  	 <servlet>
+  	 	<servlet-name>SendEmailServlet</servlet-name>
+  	 	<display-name>SendEmailServlet</display-name>
+  	 	<description></description>
+  	 	<servlet-class>com.nier.Booking.servlet.SendEmailServlet</servlet-class>
+  	 </servlet>
+  	 <servlet>
+  	 	<servlet-name>SubscribeServlet</servlet-name>
+  	 	<display-name>SubscribeServlet</display-name>
+  	 	<description></description>
+  	 	<servlet-class>com.nier.Booking.servlet.SubscribeServlet</servlet-class>
+  	 </servlet>
+  	 <servlet>
+  	 	<servlet-name>PayServlet2</servlet-name>
+  	 	<display-name>PayServlet2</display-name>
+  	 	<description></description>
+  	 	<servlet-class>com.nier.Booking.servlet.PayServlet2</servlet-class>
+  	 </servlet>
+  	 <servlet>
+  	 	<servlet-name>OrderUpdate</servlet-name>
+  	 	<display-name>OrderUpdate</display-name>
+  	 	<description></description>
+  	 	<servlet-class>com.nier.Booking.servlet.OrderUpdate</servlet-class>
+  	 </servlet>
+  	
+  	
+  	
+  <servlet-mapping>
+  	<servlet-name>TextServlet</servlet-name>
+  	<url-pattern>/TextServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ShowMapServlet</servlet-name>
+  	<url-pattern>/ShowMapServlet</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+    	<servlet-name>LoginServlet</servlet-name>
+    	<url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+  <servlet-mapping>
+    	<servlet-name>PayServlet</servlet-name>
+    	<url-pattern>/PayServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet-mapping>
+    	<servlet-name>GetImage</servlet-name>
+    	<url-pattern>/GetImage</url-pattern>
+    </servlet-mapping>
+  
+  <servlet-mapping>
+    	<servlet-name>OrderPayServlet</servlet-name>
+    	<url-pattern>/OrderPayServlet</url-pattern>
+    </servlet-mapping>
+  
+    <servlet-mapping>
+    	<servlet-name>LookingroomServlet</servlet-name>
+    	<url-pattern>/LookingroomServlet</url-pattern>
+    </servlet-mapping>
+    
+        <servlet-mapping>
+    	<servlet-name>LookingroomInitServlet</servlet-name>
+    	<url-pattern>/LookingroomInitServlet</url-pattern>
+    </servlet-mapping>
+        <servlet-mapping>
+        	<servlet-name>PersonInfor2Servlet</servlet-name>
+        	<url-pattern>/PersonInfor2Servlet</url-pattern>
+        </servlet-mapping>
+        <servlet-mapping> 
+        	<servlet-name>PersonInforServlet</servlet-name>
+        	<url-pattern>/PersonInforServlet</url-pattern>
+        </servlet-mapping>
+        <servlet-mapping>
+        	<servlet-name>UserExitServlet</servlet-name>
+        	<url-pattern>/UserExitServlet</url-pattern>
+        </servlet-mapping>
+         <servlet-mapping>
+        	<servlet-name>CommentPageServlet</servlet-name>
+        	<url-pattern>/CommentPageServlet</url-pattern>
+        </servlet-mapping>
+  		<servlet-mapping>
+    	<servlet-name>SearchResultServlet</servlet-name>
+    	<url-pattern>/SearchResultServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        	<servlet-name>SubmitImgServlet</servlet-name>
+        	<url-pattern>/SubmitImgServlet</url-pattern>
+        </servlet-mapping>
+        <servlet-mapping>
+        	<servlet-name>ChangeInfoServlet</servlet-name>
+        	<url-pattern>/ChangeInfoServlet</url-pattern>
+        </servlet-mapping>  
+          <servlet-mapping>
+        	<servlet-name>TucaoServlet</servlet-name>
+        	<url-pattern>/TucaoServlet</url-pattern>
+        </servlet-mapping>
+        <servlet-mapping>
+        	<servlet-name>AutoCompleteServlet</servlet-name>
+        	<url-pattern>/AutoCompleteServlet</url-pattern>
+        </servlet-mapping>
+        <servlet-mapping>
+        	<servlet-name>RegisterVerifyServlet</servlet-name>
+        	<url-pattern>/RegisterVerifyServlet</url-pattern>
+        </servlet-mapping>
+        <servlet-mapping>
+        	<servlet-name>VerifyServlet</servlet-name>
+        	<url-pattern>/VerifyServlet</url-pattern>
+        </servlet-mapping>
+         <servlet-mapping>
+        	<servlet-name>ShowOrderServlet</servlet-name>
+        	<url-pattern>/ShowOrderServlet</url-pattern>
+        </servlet-mapping>
+        <servlet-mapping>
+        	<servlet-name>SendSms</servlet-name>
+        	<url-pattern>/SendSms</url-pattern>
+        </servlet-mapping>
+        <servlet-mapping>
+        	<servlet-name>SendEmailServlet</servlet-name>
+        	<url-pattern>/SendEmailServlet</url-pattern>
+        </servlet-mapping>
+        <servlet-mapping>
+        	<servlet-name>SubscribeServlet</servlet-name>
+        	<url-pattern>/SubscribeServlet</url-pattern>
+        </servlet-mapping>
+        <servlet-mapping>
+        	<servlet-name>PayServlet2</servlet-name>
+        	<url-pattern>/PayServlet2</url-pattern>
+        </servlet-mapping>
+        <servlet-mapping>
+        	<servlet-name>OrderUpdate</servlet-name>
+        	<url-pattern>/OrderUpdate</url-pattern>
+        </servlet-mapping>
+</web-app>
