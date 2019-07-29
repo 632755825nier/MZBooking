@@ -1,0 +1,6 @@
+git init
+git remote add origin ssh地址
+git clone ssh地址
+git add 文件名
+git commit -m “提交的注释”
+git push -u origin master
